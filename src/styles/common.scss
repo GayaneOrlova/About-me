@@ -1,0 +1,97 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-700.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  background-color: var(--white);
+}
+
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.no-display {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 24px;
+}
+body .ui-tooltip{
+  background-color: var(--middle-grey);
+  border-radius: 32px;
+  padding: 0px 8px !important;
+  line-height: 32px;
+  font-size: 12px;
+}
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+
+@media (max-width: 1023px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-only {
+    display: none;
+  }
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

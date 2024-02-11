@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гаяне Орлова: сайт-визитка</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Гаяне Орлова",
+        "jobTitle": "Веб-разработчик",
+        "url": "https://www.example.com",
+        "email": "gayanev.stepanyan@yandex.ru",
+        "telephone": "+7-918-55-33-223",
+         "image": "https://www.example.com/dist/image/logo.jpg"
+        }
+    </script>
+    <link rel="stylesheet" href="./dist/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a class="header__logo" href="/">
+            <picture>
+              <source srcset="./dist/image/logo.webp" type="image/webp">
+              <source srcset="./dist/image/logo.jpg" type="image/jpeg">
+              <img
+                width="160"
+                height="171"
+                class="header__logo-image"
+                src="./dist/image/logo.jpg"
+                alt="Гаяне Орлова"
+                >
+            </picture>
+          </a>
+          <div class="header__description ">
+            <h1 class="header__title">Гаяне Орлова</h1>
+            <p class="header__subtitle">Веб-разработчик</p>
+          </div>
+        </div>
+        <button class="header__link js-my-contacts">Мои контакты</button>
+      </div>
+    </header>
+    <main class="main container">
+      <div class="tabs" id="tabs">
+        <ul class="tabs__list">
+          <li class="tabs__list-item">
+            <a class="tabs__link" href="#tabs-1" data-text="Обо мне">Обо мне</a>
+          </li>
+          <li class="tabs__list-item">
+            <a class="tabs__link" href="#tabs-2" data-text="Опыт работы">Опыт работы</a>
+          </li>
+          <li class="tabs__list-item">
+            <a class="tabs__link" href="#tabs-3" data-text="Навыки">Навыки</a>
+          </li>
+        </ul>
+        <div class="desktop__view">
+          <div class="image__container">
+            <img class="image__two" src="./dist/image/polyhedron.png" alt="Многогранник">
+            <img class="main-desktop desktop-only" src="./dist/image/main-desktop.png" alt="Команда">
+            <img class="main-mobile mobile-only" src="./dist/image/main-mobile.png" alt="Команда">
+            <img class="second-desktop desktop-only" src="./dist/image/second-desktop.png" alt="Куб">
+            <svg
+              class="main-mobile mobile-only js-effect"
+              width="369" height="440" viewBox="0 0 369 440"
+              fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+              <path class="main-mobile__stroke" d="M-147 228.91C-135.88 166.504 -95.375 44.276 -22.316 54.6169C69.0078 67.543 29.3924 318.559 90.2749 311.887C151.157 305.216 115.295 87.3576 234.141 87.3576C328.874 87.3576 322.257 244.882 313.032 324.211C312.91 325.259 311.398 325.399 310.975 324.432C298.946 296.947 263.079 267.754 229.971 294.175C195.276 321.861 190.912 366.866 190.356 398" stroke="#F2F2F2" stroke-width="3.40541" stroke-linecap="round" />
+              <ellipse class="main-mobile__ellipse" cx="230" cy="88.5" rx="10" ry="10.5" fill="#F2F2F2"/>
+            </svg>
+            <svg
+              class="second-desktop js-effect desktop-only"
+              width="331" height="264" fill="none"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+              <path class="second-desktop__stroke" d="M20.164 134.553S89.98 41.967 158.693 52.967c42.152 6.748 68.317 76.408 68.317 76.408s28.893-102.514 87.587-118.033C412.112-14.44 474 224.72 474 224.72" stroke="#fff" stroke-width="4.12" stroke-linecap="round"/>
+              <ellipse class="second-desktop__ellipse" cx="227.287" cy="131.815" rx="12.364" ry="12.373" fill="#fff"/>
+            </svg>
+            <svg
+              class="main-desktop js-effect desktop-only"
+              fill="none" viewBox="0 0 610 564"
+              xmlns="http://www.w3.org/2000/svg"
+              >
+              <path class="main-desktop__stroke" d="M-9 299.74c13.333-74.834 61.9-221.4 149.5-209 109.5 15.5 62 316.5 135 308.5S305.5 130 448 130c113.922 0 105.606 190.008 94.494 284.857-.123 1.049-1.622 1.17-2.035.198C526.376 381.876 483.008 346.071 443 378c-41.6 33.2-46.833 87.167-47.5 124.5" stroke="#F2F2F2" stroke-width="3.405" stroke-linecap="round"/>
+              <ellipse class="main-desktop__ellipse" cx="459.364" cy="130.373" rx="12.364" ry="12.373" fill="#F2F2F2"/>
+            </svg>
+          </div>
+          <section class="tabs__section introduction" id="tabs-1">
+            <h2 class="tabs__section-title">Привет!</h2>
+            <div class="introduction__description">
+              <p>Меня зовут Гаяне и я веб-разработчик с любовью к визуальной эстетике и функциональности.</p>
+              <p>
+                Я увлечена созданием красивых и интуитивно понятных пользовательских интерфейсов,
+                которые делают взаимодействие с веб-приложениями приятным и эффективным.
+                Мой путь в программировании начался с изучения основ HTML, CSS и JavaScript,
+                и с тех пор я не перестаю удивляться всем возможностям, которые они открывают.
+              </p>
+              <p>
+                Мое сердце принадлежит JavaScript, и в особенности React -
+                я обожаю использовать эту библиотеку для создания динамичных и масштабируемых веб-приложений.
+                Работа с компонентами, управление состоянием и разработка с использованием современных практик -
+                все это приносит мне огромное удовольствие.
+              </p>
+              <p>
+                Кроме того, я постоянно изучаю новые технологии и методики разработки, чтобы быть в курсе
+                последних трендов и обеспечивать высокое качество своей работы.
+              </p>
+              <p>
+                Будучи фронтенд-разработчиком, я стремлюсь к тому, чтобы каждый проект,
+                над которым я работаю, был не только функциональным, но и привлекательным для пользователей.
+              </p>
+              <p>Я верю, что даже самая сложная функциональность может быть представлена в простой и привлекательной форме.</p>
+            </div>
+          </section>
+          <section class="tabs__section experience" id="tabs-2" style="display: none;">
+            <h2 class="tabs__section-title">Опыт работы</h2>
+            <ul class="experience__list">
+              <li class="experience__list-item">
+                <div class="wrapper">
+                  <h3 class="experience__title">Фриланс по разработке ReactJS-приложений</h3>
+                  <p class="experience__description">
+                    Участвую в разработке платформы для обучения IT-специалистов - 404HUB: разрабатываю новые модули системы и осуществляют поддержку существующего кода.
+                  </p>
+                </div>
+                <span class="experience__period">декабрь 2023 г — по настоящее время</span>
+              </li>
+              <li class="experience__list-item">
+                <div class="wrapper">
+                  <h3 class="experience__title">Стажировка в IT-компании</h3>
+                  <p class="experience__description">
+                    Погрузилась в мир React и React Native, создав несколько классных проектов.
+                    Также изучила Django REST-фреймворк и успешно разработала несколько веб-приложений на этой технологии.
+                  </p>
+                </div>
+                <span class="experience__period">апрель 2023 г — октябрь 2023 г</span>
+              </li>
+              <li class="experience__list-item">
+                <div class="wrapper">
+                  <h3 class="experience__title">Компания АО НKБ ВC</h3>
+                  <p class="experience__description">
+                    Являлась заместителем руководителя группы Интеллектуальной собственности.
+                    Ключевым моментом работы стала идея создания и участие в разработка Базы данных объектов интеллектуальной собственности компании
+                    и внедрение этой БД в работу компании.
+                  </p>
+                </div>
+                <span class="experience__period">сентябрь 2014 г — ноябрь 2022 г</span>
+              </li>
+              <li class="experience__list-item js-experience-hidden" style="display: none;">
+                <div class="wrapper">
+                  <h3 class="experience__title">Компания НКБ "МИУС" ЮФУ</h3>
+                  <p class="experience__description">
+                    Проводила испытания электронных блоков на воздействие механических ударов многократного действия,
+                    на воздействие повышенной влажности, синусоидальной вибрации, изменения температуры среды (термоциклирование).
+                  </p>
+                </div>
+                <span class="experience__period">январь 2012 г — июнь 2014 г</span>
+              </li>
+             
+            </ul>
+            <button class="toggle-button js-experience-button">Показать полностью</button>
+            <button class="toggle-button collapse js-experience-button">Свернуть</button>
+          </section>
+          <section class="tabs__section skills" id="tabs-3" style="display: none;">
+            <h2 class="tabs__section-title">Навыки</h2>
+            <ul class="skills__list">
+              <li class="skills__list-item">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title js-skills-title" title="Верстка 70%">
+                    <span class="skills__title-text">Верстка</span>
+                    <span class="skills__title-bg" style="width: 70%"></span>
+                  </h3>
+                  <p class="skills__description">Хорошо адаптирую веб-сайты под различные устройства и экраны
+                    для оптимального отображения.
+                  </p>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title layout js-skills-title" title="JavaScript 70%">
+                    <span class="skills__title-text">JavaScript</span>
+                    <span class="skills__title-bg" style="width: 70%"></span>
+                  </h3>
+                  <p class="skills__description">
+                    Мой уровень знаний JavaScript включает основы языка, работу с DOM,
+                    асинхронные запросы, использование функций и объектов, а также умение создавать простые (и не очень простые) веб-приложения.
+                    Имею представление о работе EventLoop, стараюсь не терять this.
+                  </p>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title js-skills-title" title="SCSS 70%">
+                    <span class="skills__title-text">SCSS</span>
+                    <span class="skills__title-bg" style="width: 70%"></span>
+                  </h3>
+                  <p class="skills__description">
+                    Имею опыт создания стилей для веб-приложений с использованием препроцессора SCSS. 
+                  </p>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title js-skills-title" title="React 70%">
+                    <span class="skills__title-text">React</span>
+                    <span class="skills__title-bg" style="width: 70%"></span>
+                  </h3>
+                  <p class="skills__description">
+                    Разрабатывая веб-приложения на React, отдаю предпочтение использованию функциональных компонентов и хуков. 
+                    Знаю, как важно отличать и разделять умные компоненты от глупых. Избегаю props-drilling.
+                    Реализовывала регистрацию, аутентификацию пользователя, фильтрацию, поиск, навигацию между различными страницами приложения.
+                  </p>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title js-skills-title" title="React Native 70%">
+                    <span class="skills__title-text">React Native</span>
+                    <span class="skills__title-bg" style="width: 63%"></span>
+                  </h3>
+                  <p class="skills__description">
+                    Разработала несколько приложения React-Native + Redux Toolkit + Typescript для веб и мобильных приложений.
+                    Полюбила React-Native за возможность развиваться не только в веб, но и в мобильной разработке.
+                  </p>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title js-skills-title" title="Next.js 43%">
+                    <span class="skills__title-text">Next.js</span>
+                    <span class="skills__title-bg" style="width: 43%"></span>
+                  </h3>
+                  <p class="skills__description">
+                    Участовала в разработке веб-приложения на Next.js с помощью компонентов React.
+                    Уверенно работаю с динамической маршрутизацией, статической генерацией страниц.
+                  </p>
+                </div>
+              </li>
+              <li class="skills__list-item">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title js-skills-title" title="Redux Toolkit 63%">
+                    <span class="skills__title-text">Redux Toolkit</span>
+                    <span class="skills__title-bg" style="width: 63%"></span>
+                  </h3>
+                  <p class="skills__description">
+                    Примененяла Redux Toolkit для управления состоянием приложения и работы с асинхронными действиями.
+                  </p>
+                </div>
+              </li>
+              <li class="skills__list-item js-skills-hidden" style="display: none;">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title js-skills-title" title="Typescript 63%">
+                    <span class="skills__title-text">Typescript</span>
+                    <span class="skills__title-bg" style="width: 63%"></span>
+                  </h3>
+                  <p class="skills__description">
+                    Разрабатываю веб-приложения на React с использованием TypeScript для строгой типизации данных и компонентов.
+                    Создание типов для компонентов, пропсов, состояний и данных повышает надежность кода и облегчает его поддержку.
+                    </p>
+                </div>
+              </li>
+              
+              <li class="skills__list-item js-skills-hidden" style="display: none;">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title js-skills-title" title="Python Django 53%">
+                    <span class="skills__title-text">Python Django REST framework</span>
+                    <span class="skills__title-bg" style="width: 53%"></span>
+                  </h3>
+                  <p class="skills__description">
+                    Разрабатывала нескольких приложений на данном фреймворке:
+                    понимаю архитектуру приложений, как создавать сложные функциональности и взаимодействовать с базами данных.
+                    Имеею опыт работы с REST API, сериализацией данных, аутентификацией и авторизацией пользователей.
+                  </p>
+                </div>
+              </li>
+              <li class="skills__list-item js-skills-hidden" style="display: none;">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title js-skills-title" title="Socket.IO 23%">
+                    <span class="skills__title-text">Socket.IO</span>
+                    <span class="skills__title-bg" style="width: 23%"></span>
+                  </h3>
+                  <p class="skills__description">Разрабатывала функционал для обмена сообщениями в режиме реального времени.</p>
+                </div>
+              </li>
+              <li class="skills__list-item js-skills-hidden" style="display: none;">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title js-skills-title" title="Firebase Cloud Messaging 30%">
+                    <span class="skills__title-text">Firebase Cloud Messaging</span>
+                    <span class="skills__title-bg" style="width: 30%"></span>
+                  </h3>
+                  <p class="skills__description">Реализовывала пуш-нотификацию с помощью Firebase Cloud Messaging.</p>
+                </div>
+              </li>
+              <li class="skills__list-item js-skills-hidden" style="display: none;">
+                <div class="skills__list-wrap">
+                  <h3 class="skills__title js-skills-title" title="Английский язык 73%">
+                    <span class="skills__title-text">Английский язык</span>
+                    <span class="skills__title-bg" style="width: 73%"></span>
+                  </h3>
+                  <p class="skills__description">
+                    Могу понимать речь на слух (разговоры на повседневную тему),
+                    могу поддержать разговор на знакомые темы, читать тексты средней сложности,
+                    читать инструкции, техническую документацию, письменно выражать свое мнение,
+                    описывать ситуации, использовать язык в путешествиях.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <button class="toggle-button js-skills-button">Показать полностью</button>
+            <button class="toggle-button collapse js-skills-button">Свернуть</button>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container " id="footer__contacts">
+          <div class="footer__contacts">
+            <a class="footer__contacts-email" href="mailto:gayanev.stepanyan@yandex.ru">gayanev.stepanyan@yandex.ru</a>
+            <a class="footer__contacts-phone" href="tel:+79185533223">+7 918 55-33-223</a>
+          </div>
+          <div class="footer__social">
+            <ul class="footer__social-list social__list">
+              <li class="social__list-item item">
+                <a class="item__link-vk" target="_blank" href="https://vk.com/id228678512">
+                  <svg class="social__icon" width="40" height="40">
+                    <use href="#icon1"></use>
+                  </svg>
+                  <span class="visually-hidden">Моя страница Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__list-item item">
+                <a class="item__link-tg" target="_blank" href="https://www.instagram.com/gaechka_orlova?igsh=MWd5cGwyNXR4ODQ1bA%3D%3D&utm_source=qr">
+                  <svg class="social__icon" width="40" height="40">
+                    <use xlink:href="#icon8"></use>
+                  </svg>
+                  <span class="visually-hidden">Моя страница Instagram</span>
+                </a>
+              </li>
+              <li class="social__list-item item">
+                <a class="item__link-tg" target="_blank" href="https://t.me/GaeckaOrlova">
+                  <svg class="social__icon" width="40" height="40">
+                    <use xlink:href="#telegram"></use>
+                  </svg>
+                  <span class="visually-hidden">Моя страница Telegram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__info">
+          <strong>© Гаяне Орлова</strong>, 2012–2024. Веб-разработчик
+        </div>
+      </div>
+    </footer>
+    <div class="no-display">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon1" viewBox="0 0 40 40">
+          <path fill="currentColor"
+            d="M34.8409 26.7183C34.8046 26.6421 34.7707 26.5789 34.7392 26.5282C34.2188 25.6154 33.2241 24.495 31.7559 23.1667L31.7249 23.1363L31.7093 23.1213L31.6936 23.106H31.6779C31.0115 22.4875 30.5895 22.0716 30.4128 21.8587C30.0895 21.4531 30.0171 21.0425 30.1938 20.6265C30.3186 20.3122 30.7876 19.6485 31.5996 18.6343C32.0267 18.0969 32.3649 17.6661 32.6147 17.3416C34.4164 15.0094 35.1974 13.5191 34.9578 12.87L34.8648 12.7184C34.8022 12.6271 34.6408 12.5435 34.3808 12.4674C34.1202 12.3913 33.787 12.3788 33.3808 12.4294L28.8825 12.4597C28.8096 12.4346 28.7055 12.4369 28.57 12.4674C28.4346 12.4978 28.3668 12.5131 28.3668 12.5131L28.2885 12.5512L28.2264 12.597C28.1743 12.6272 28.117 12.6805 28.0545 12.7565C27.9923 12.8323 27.9403 12.9213 27.8987 13.0227C27.4089 14.2496 26.8521 15.3903 26.2272 16.4447C25.8419 17.0735 25.488 17.6184 25.1648 18.0798C24.8421 18.541 24.5714 18.8808 24.3529 19.0987C24.134 19.3167 23.9365 19.4914 23.7592 19.6233C23.5821 19.7553 23.4469 19.8111 23.3533 19.7907C23.2595 19.7703 23.1711 19.7501 23.0875 19.7298C22.9418 19.6385 22.8246 19.5143 22.7362 19.3572C22.6475 19.2 22.5877 19.0022 22.5565 18.7639C22.5254 18.5255 22.507 18.3204 22.5018 18.148C22.4969 17.9757 22.4992 17.7321 22.5097 17.4178C22.5206 17.1034 22.5254 16.8906 22.5254 16.7791C22.5254 16.3937 22.5331 15.9755 22.5486 15.5242C22.5644 15.073 22.5771 14.7155 22.5878 14.4522C22.5984 14.1885 22.6033 13.9096 22.6033 13.6155C22.6033 13.3215 22.585 13.0909 22.5486 12.9235C22.5127 12.7563 22.4576 12.594 22.385 12.4367C22.312 12.2796 22.2051 12.158 22.0648 12.0717C21.9243 11.9855 21.7495 11.9171 21.5416 11.8663C20.9896 11.7447 20.2868 11.6789 19.4327 11.6687C17.496 11.6484 16.2515 11.7702 15.6996 12.0338C15.481 12.1452 15.2831 12.2974 15.1062 12.49C14.9187 12.7131 14.8925 12.8349 15.0279 12.8549C15.6528 12.9461 16.0951 13.1641 16.3555 13.5088L16.4493 13.6915C16.5223 13.8233 16.5952 14.0566 16.6681 14.3912C16.7409 14.7257 16.7879 15.0958 16.8086 15.5012C16.8606 16.2415 16.8606 16.8752 16.8086 17.4024C16.7565 17.9298 16.7072 18.3403 16.6602 18.6344C16.6132 18.9284 16.543 19.1667 16.4493 19.3492C16.3555 19.5317 16.2931 19.6432 16.2618 19.6837C16.2305 19.7242 16.2045 19.7497 16.1838 19.7597C16.0485 19.8103 15.9077 19.836 15.762 19.836C15.6161 19.836 15.4392 19.7649 15.231 19.6229C15.0228 19.4809 14.8067 19.2858 14.5828 19.0373C14.3589 18.7888 14.1064 18.4415 13.8251 17.9955C13.5441 17.5494 13.2525 17.0221 12.9505 16.4138L12.7006 15.9726C12.5444 15.6887 12.3311 15.2755 12.0603 14.7331C11.7894 14.1905 11.5499 13.6657 11.3418 13.1587C11.2586 12.9458 11.1336 12.7837 10.967 12.6721L10.8888 12.6264C10.8368 12.5859 10.7534 12.5429 10.6389 12.4971C10.5243 12.4513 10.4047 12.4185 10.2797 12.3983L5.99986 12.4286C5.56251 12.4286 5.26577 12.5251 5.10953 12.7177L5.04699 12.8089C5.01576 12.8597 5 12.9407 5 13.0523C5 13.1639 5.03124 13.3008 5.09377 13.4629C5.71854 14.8927 6.39797 16.2716 7.13205 17.5999C7.86613 18.9282 8.50404 19.9981 9.04538 20.8088C9.58683 21.6201 10.1387 22.3858 10.7011 23.1055C11.2634 23.8254 11.6357 24.2868 11.8178 24.4895C12.0001 24.6926 12.1434 24.8444 12.2475 24.9458L12.638 25.3107C12.888 25.5541 13.2549 25.8456 13.7392 26.1852C14.2235 26.5251 14.7597 26.8596 15.348 27.1894C15.9365 27.5187 16.6211 27.7874 17.4021 27.9952C18.1831 28.2032 18.9432 28.2867 19.6826 28.2464H21.4789C21.8432 28.2158 22.1192 28.1042 22.3068 27.9117L22.369 27.8355C22.4108 27.775 22.4499 27.6809 22.486 27.5544C22.5225 27.4277 22.5407 27.2881 22.5407 27.1362C22.53 26.7003 22.5641 26.3074 22.642 25.9576C22.7199 25.6079 22.8086 25.3443 22.9078 25.1667C23.007 24.9894 23.119 24.8397 23.2435 24.7183C23.3684 24.5967 23.4573 24.523 23.5095 24.4977C23.5614 24.4721 23.6028 24.4548 23.634 24.4444C23.884 24.3634 24.1781 24.4419 24.5168 24.6804C24.8553 24.9187 25.1728 25.2129 25.4697 25.5626C25.7665 25.9125 26.1231 26.3052 26.5396 26.7411C26.9563 27.1772 27.3206 27.5014 27.6329 27.7146L27.9452 27.8971C28.1537 28.0189 28.4245 28.1305 28.7578 28.2318C29.0905 28.3332 29.382 28.3585 29.6322 28.3078L33.6307 28.2471C34.0262 28.2471 34.334 28.1834 34.5523 28.0568C34.771 27.9301 34.9009 27.7905 34.9428 27.6386C34.9846 27.4866 34.9869 27.3141 34.9508 27.1212C34.9137 26.9289 34.8772 26.7944 34.8409 26.7183Z"/>
+        </symbol>
+        <symbol id="icon8" viewBox="0 0 40 40">
+          <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+            d="M20 8C16.741 8 16.333 8.014 15.053 8.072C12.8748 8.17196 11.1802 8.82604 10.005 10H10V10.005C8.82711 11.1796 8.17289 12.8733 8.073 15.052C8.014 16.333 8 16.741 8 20C8 23.259 8.014 23.668 8.072 24.948C8.17196 27.1262 8.82604 28.8208 10 29.996V30H10.004C11.1786 31.1735 12.8727 31.8281 15.052 31.928C16.333 31.986 16.741 32 20 32C23.259 32 23.668 31.986 24.948 31.928C27.1242 31.828 28.8193 31.174 29.9951 30H30V29.9951C31.1736 28.8205 31.8286 27.1268 31.927 24.948C31.986 23.668 32 23.259 32 20C32 16.741 31.986 16.333 31.928 15.053C31.83 12.8755 31.1755 11.1803 30 10.0045V10H29.9955C28.8207 8.82755 27.1268 8.17285 24.949 8.073C23.668 8.014 23.259 8 20 8ZM24.9648 13.5953C24.9648 12.8003 25.6098 12.1553 26.4058 12.1553C27.2008 12.1553 27.8448 12.8003 27.8448 13.5953C27.8448 14.3903 27.2008 15.0353 26.4058 15.0353C25.6098 15.0353 24.9648 14.3903 24.9648 13.5953ZM20.0042 16C17.7912 16 16 17.793 16 20C16 22.207 17.7912 24 20.0042 24C22.2103 24 24 22.2097 24 20C24 17.7903 22.2103 16 20.0042 16ZM20.0042 14C16.6875 14 14 16.6875 14 20C14 23.3125 16.6875 26 20.0042 26C23.3167 26 26 23.3125 26 20C26 16.6875 23.3167 14 20.0042 14Z"/>
+        </symbol>
+        <symbol id="telegram" viewBox="-10 -10 75 75">
+          <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+            d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"/>
+        </symbol>
+      </svg>
+    </div>
+    <script defer src="dist/main.js"></script>
+  </body>
+</html>

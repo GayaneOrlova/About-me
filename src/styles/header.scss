@@ -1,0 +1,142 @@
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+body{
+  @media (min-width: 1024px) {
+    padding-top: 160px;
+    &.header-sticky{
+      .header{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: fixed;
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background-color: transparent;
+        animation: slideDown 0.35s ease-out;
+      }
+      .header__subtitle{
+        display: none;
+      }
+      .header__title{
+        font-size: 24px;
+      }
+      .header__logo{
+        width: 50px;
+        height: 50px;
+      }
+      .header__link{
+        padding: 10px 15px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.header {
+  background: var(--light-grey);
+  padding: 40px 20px;
+  z-index: 50;
+  transition: padding .3s;
+  .container{
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1360px;
+    }
+  }
+  @media (min-width: 1024px) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+  }
+}
+.header__logo {
+  display: block;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header__logo-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.header__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+.header__subtitle {
+  font-size: 16px;
+  color: var(--grey);
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  color: var(--black);
+}
+.header__link {
+  font-family: Montserrat, sans-serif;
+  padding: 16px 73px;
+  align-self: center;
+  border-radius: 64px;
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid var(--black);
+  cursor: pointer;
+  transition: background-color .3s, color .3s;
+  &:hover{
+    color: var(--black);
+    background-color: var(--white);
+    border-color: var(--yellow);
+  }
+
+  @media (max-width: 374px) {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    padding: 32px 0;
+    .container{
+      padding: 0 64px;
+    }
+  }
+  .header__link{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .header__logo {
+    height: 96px;
+    width: 96px;
+  }
+
+  .header__title {
+    font-size: 36px;
+  }
+  .header__subtitle {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,247 @@
+.image__container {
+  position: relative;
+  height: 440px;
+  background-image:  linear-gradient(180deg, #FCED50, #FFDD00, #ECB300);
+  background-size: contain;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.introduction__description {
+  p {
+    margin: 0;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.experience__description {
+  margin: 0;
+  font-size: 16px;
+}
+
+.image__two {
+  display: none;
+}
+
+.image__three {
+  display: none;
+}
+
+.toggle-button {
+  background: none;
+  text-decoration: underline;
+  font-size: 22px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 20px;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.toggle-button.collapse {
+  display: none;
+}
+
+.experience {
+  .button {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .tabs__section-title {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+.skills {
+  .tabs__section-title {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 0 41px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 0 41px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.experience__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  padding: 24px;
+
+  &:nth-child(odd) {
+    background-color: var(--light-grey);
+    border-radius: 12px;
+  }
+}
+
+.skills__list-item {
+  padding: 24px;
+  &:nth-child(odd) {
+    background-color: var(--light-grey);
+    border-radius: 12px;
+  }
+}
+.skills__list-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.experience__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.skills__title {
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  background-color: var(--middle-grey);
+  position: relative;
+  font-size: 12px;
+  padding: 0 24px 0 12px;
+  border-radius: 100px;
+  align-self: flex-start;
+  line-height: 32px;
+  overflow: hidden;
+}
+
+.skills__title-text {
+  position: relative;
+  z-index: 10;
+}
+
+.skills__title-bg {
+  background-color: var(--yellow);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transition: width .7s;
+  .js-skills-title &{
+    width: 0 !important;
+  }
+}
+
+.skills__description {
+  margin: 0;
+  font-size: 16px;
+}
+
+.experience__period {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: var(--yellow);
+  padding: 0 12px;
+  border-radius: 100px;
+  align-self: flex-start;
+  line-height: 32px;
+}
+
+@media (min-width: 1024px) {
+  .main.container{
+    display: block;
+  }
+  .desktop__view {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_desktop{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .image__container {
+    flex: 1 0 50%;
+    height: auto;
+    min-height: 834px;
+    background-image: linear-gradient(180deg, #FCED50, #FFDD00, #ECB300);
+    background-size: auto;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+  .tabs__section {
+    flex: 1 0 50%;
+    margin-top: 0;
+    background: none;
+    padding: 0 64px 95px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    &.experience{
+      padding-bottom: 93px
+    }
+  }
+
+  .introduction__description {
+    gap: 16px;
+  }
+  .image__two {
+    display: block;
+    top: -65px;
+    left: 297px;
+  }
+  .image__three {
+    display: block;
+    top: 51px;
+    right: 0;
+    position: absolute;
+  }
+
+  .experience__list{
+    margin-bottom: 17px;
+  }
+  .toggle-button{
+    margin-left: 0;
+  }
+  .skills,
+  .experience {
+    .tabs__section-title {
+      padding: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .experience__list-item {
+    padding: 24px;
+    gap: 20px;
+  }
+}
